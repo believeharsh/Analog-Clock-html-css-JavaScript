@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@500&family=PT+Sans:ital@0;1&family=Poppins:wght@200&family=Space+Mono:ital@1&family=Tajawal:wght@300&family=Tinos&family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif; 
+    background: rgb(238, 174 , 2021);
+    background: radial-gradient(circle, rgb(238, 174, 2021 , 1),0%) , rgba(148, 187, 233, 1 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+
+}
+.clock{
+    background: rgb(0, 0, 0);
+    width: 300px;
+    height: 300px ;
+    border-radius: 100%;
+    color: #fff;
+    border: 5px solid white;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255 , 0.7);
+    font-size: 26px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+
+}
+
+.clock ul li{
+    list-style: none;
+    position: absolute;
+    text-align: center;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 5px;
+
+}
+.clock ul li span{
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+
+
+}
+.clock::after{
+    content: '';
+    width: 10px ;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+
+}
+.neddle{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.neddle span {
+ width: 5px;
+ height: var(--h);
+ background-color: var(--clr);
+ position: absolute;
+ border-radius: 5px;
+
+}
