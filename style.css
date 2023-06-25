@@ -68,3 +68,16 @@ body{
  border-radius: 5px;
 
 }
+
+.lines li {
+    list-style: none;
+    position: absolute;
+    text-align: center;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 2px;
+    
+}
+.lines li span {
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+}
