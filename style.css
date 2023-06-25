@@ -9,8 +9,8 @@
 
 body{
     font-family: 'Poppins', sans-serif; 
-    background: rgb(238, 174 , 2021);
-    background: radial-gradient(circle, rgb(238, 174, 2021 , 1),0%) , rgba(148, 187, 233, 1 100%);
+    /* background: rgb(238, 174 , 2021); */
+    background: linear-gradient(130deg, #ebebeb 40%, #e0adbb);
     display: flex;
     justify-content: center;
     align-items: center;
